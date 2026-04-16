@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import NavigationBar from './NavigationBar'
 import { useRef } from 'react'
-import AboutSection from './aboutsection';
+import AboutSection from './AboutSection';
 import ProjectSection from './ProjectSection';
 import ValuesSection from './ValueSection';
 import { useEffect, useState } from "react";
