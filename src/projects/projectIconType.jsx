@@ -1,5 +1,4 @@
-
-export const AppIconType = {
+export const ProjectIconType = {
     MOBILE: "mobile",
     WEB: "web"
 };
