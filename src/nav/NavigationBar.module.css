@@ -1,0 +1,76 @@
+.container {
+    position: fixed;
+    top: 50%;
+    right: 120px;
+    z-index: var(--z-floating);
+}
+
+.container ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+.container li {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+}
+
+.container li:not(:last-child)::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #ffffff;
+    margin: 8px 0;
+}
+
+@media (max-width: 1024px) {
+    .socialIconsHidden {
+        display: none;
+    }
+
+    .container {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        background-color: white;
+    }
+
+    .container nav {
+        margin-left: auto;
+        /* 👈 THIS is the fix */
+    }
+
+    .container ul {
+        height: 48px;
+        align-items: center;
+        padding-right: 12px;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        gap: 8px;
+    }
+
+    .container li {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+    }
+
+    .container li:not(:last-child)::after {
+        content: "/";
+        margin: 0 8px;
+        color: #202020;
+    }
+
+    .container a {
+        color: #202020;
+    }
+}

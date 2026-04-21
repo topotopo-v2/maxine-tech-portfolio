@@ -17,11 +17,11 @@ export default function ProjectSection({ experienceRef }) {
                     <h1>{SECTION_CONTENT.title}</h1>
                     <div className="summary">
                         <p>{SECTION_CONTENT.description}</p>
-                        {SECTION_CONTENT.resumeUrl && (
+                        {/* {SECTION_CONTENT.resumeUrl && (
                             <a href={SECTION_CONTENT.resumeUrl} download aria-label="Download resume">
                                 Download resume
                             </a>
-                        )}
+                        )} */}
                     </div>
 
                     {projects && projects.length > 0 ? (

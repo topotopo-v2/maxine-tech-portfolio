@@ -1,0 +1,11 @@
+.video {
+    width: 200px;
+    display: block;
+    border-radius: 20px;
+}
+
+.image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+}

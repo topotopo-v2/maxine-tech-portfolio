@@ -1,3 +1,5 @@
+import SocialIcons from "../common/SocialIcons";
+
 const SKILLS = [
     {
         id: 'android',
@@ -23,11 +25,13 @@ export default function AboutSection({ aboutRef }) {
     return (
         <section id="about" ref={aboutRef}>
             <div className="page">
+                <div className="social-media-icons">
+                    <SocialIcons />
+                </div>
                 <div className="page-content">
                     <h1>Hello visitor,</h1>
                     <div className="summary">
                         <p>I am Maxine, a Software Engineer with 10+ years of experience, specialising in Android development and supported by backend and web development experience. Based in Singapore, I have worked across corporate environments delivering production-grade software used in real-world applications.
-
                             My core strength is building and maintaining robust Android applications, with the ability to contribute across backend and web systems when needed. I am currently available for freelance and contract opportunities, where I can help teams ship reliable, scalable products efficiently.</p>
                     </div>
                     <h2>Skills</h2>

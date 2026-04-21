@@ -1,15 +1,6 @@
 import ProjectIcons from "./ProjectIcons";
 import ProjectMedia from "./ProjectMedia";
-
-const LAYOUT_CLASSES = {
-    withMedia: "project-card-two-column-container",
-    withoutMedia: "project-card-default-container"
-};
-
-const TEXT_CLASSES = {
-    techStack: "tech-stack-text",
-    description: "formatted-text"
-};
+import styles from "./ProjectCard.module.css";
 
 export function ProjectCard({ project }) {
     // Destructuring extracts properties from the project object
@@ -17,10 +8,10 @@ export function ProjectCard({ project }) {
 
     const hasMedia = media != null;
     const hasIcons = icons != null;
-    const layoutClass = hasMedia ? LAYOUT_CLASSES.withMedia : LAYOUT_CLASSES.withoutMedia;
+    const layoutClass = hasMedia ? styles.containerWithMedia : styles.container;
 
     return (
-        <div className={layoutClass}>
+        <div className={`${layoutClass}`}>
             {hasIcons && (
                 <div>
                     <ProjectIcons icons={icons} />
@@ -32,12 +23,12 @@ export function ProjectCard({ project }) {
             <div>
                 <p>{date}</p>
                 <h3>{position}</h3>
-                <p className={TEXT_CLASSES.techStack}>{techStack}</p>
-                <p className={TEXT_CLASSES.description}>{description}</p>
+                <p className={styles.techStackText}>{techStack}</p>
+                <p className={styles.formattedText}>{description}</p>
             </div>
 
             {hasMedia && (
-                <div className="project-media-container">
+                <div className={styles.media}>
                     <ProjectMedia media={media} />
                 </div>
             )}

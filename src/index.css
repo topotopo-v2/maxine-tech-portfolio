@@ -7,7 +7,7 @@
   font: 16px/145% var(--sans);
   color-scheme: light dark;
   color: var(--text);
-  background-color: #19132A;
+  background-color: #251A44;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,7 +46,7 @@ h1 {
   color: var(--text);
 
   @media (max-width: 1024px) {
-    font-size: 36px;
+    font-size: 24px;
     margin: 20px 0;
   }
 }
@@ -68,17 +68,14 @@ h3 {
   font-size: 20px;
   font-weight: 500;
   margin: 0 0 2px;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 p {
   margin: 0;
-}
-
-li.navigation {
-  position: relative;
-  list-style-type: none;
-  padding: 0;
-  align-items: flex-start;
 }
 
 a {
@@ -86,20 +83,10 @@ a {
   font-size: 22px;
   color: #ffffff;
   text-decoration: none;
-}
 
-ul.navigation {
-  padding-left: 0;
-  margin-left: 0;
-  list-style: none;
-}
-
-li.navigation:not(:last-child)::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background: #ffffff;
-  margin: 8px 0;
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 a.active {

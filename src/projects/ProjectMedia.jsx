@@ -1,3 +1,5 @@
+import styles from "./ProjectMedia.module.css";
+
 export default function ProjectMedia({ media }) {
     const { src, type, alt } = media || {};
 
@@ -12,7 +14,7 @@ export default function ProjectMedia({ media }) {
                 muted
                 playsInline
                 preload="auto"
-                className="project-media-video"
+                className={styles.video}
                 aria-label={alt || "Project video preview"}
             />
         );
@@ -22,7 +24,7 @@ export default function ProjectMedia({ media }) {
         <img
             src={src}
             alt={alt || "Project media"}
-            className="project-media-image"
+            className={styles.image}
         />
     );
 }

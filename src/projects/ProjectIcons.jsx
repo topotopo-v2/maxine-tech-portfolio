@@ -1,19 +1,20 @@
 import { ProjectIconType } from "./projectIconType";
+import styles from './ProjectIcons.module.css';
 
 export default function ProjectIcons({ icons = [] }) {
 
     if (icons.length === 0) return null;
 
     return (
-        <div className="app-icons">
+        <div className={styles.container}>
             {icons.map((icon) => {
                 if (!icon?.src || !icon?.href) return null;
 
                 const { src, href, type, label } = icon;
-                const size =
+                const iconStyle =
                     type === ProjectIconType.MOBILE
-                        ? { width: 80, height: 80 }
-                        : { width: 140, height: 80 };
+                        ? styles.mobile
+                        : styles.web;
 
                 return (
                     <a
@@ -25,9 +26,7 @@ export default function ProjectIcons({ icons = [] }) {
                     >
                         <img
                             src={src}
-                            width={size.width}
-                            height={size.height}
-                            style={{ objectFit: "contain" }}
+                            className={`${iconStyle} ${styles.icon}`}
                             alt={label || "Project icon"}
                         />
                     </a>

@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.icon {
+    object-fit: contain;
+    transition: var(--transition-icon);
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.mobile {
+    width: 80px;
+    height: 80px;
+}
+
+.web {
+    width: 140px;
+    height: 80px;
+}
+
+@media (max-width: 1024px) {
+    .mobile {
+        width: 48px;
+        height: 48px;
+    }
+
+    .web {
+        width: 90px;
+        height: 50px;
+    }
+}

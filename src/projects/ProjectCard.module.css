@@ -1,0 +1,54 @@
+.containerWithMedia {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    column-gap: 24px;
+    row-gap: 0px;
+}
+
+.container {
+    margin-top: 80px;
+    flex-direction: column;
+    display: flex;
+    width: 70%;
+    min-height: 0;
+}
+
+.techStackText {
+    font-style: italic;
+}
+
+.formattedText {
+    margin-top: 28px;
+    white-space: pre-line;
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin-top: 32px;
+        margin-bottom: 12px;
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .containerWithMedia {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .media {
+        max-width: 200px;
+        height: auto;
+        align-self: center;
+        border-radius: 20px;
+    }
+}
