@@ -1,13 +1,13 @@
 :root {
   --text: #ffffff;
   --sans: "IBM Plex Sans", Roboto, sans-serif;
-  --heading: "IBM Plex Serif", Roboto, serif;
+  --heading: "IBM Plex Sans", Roboto, sans-serif;
   --mono: "IBM Plex Mono", Consolas, monospace;
 
   font: 16px/145% var(--sans);
   color-scheme: light dark;
   color: var(--text);
-  background-color: #251A44;
+  background-color: #221B33;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

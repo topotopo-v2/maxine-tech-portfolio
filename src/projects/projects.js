@@ -4,7 +4,6 @@ import uobInfinityIcon from "../assets/app-icon-uob-infinity.svg"
 import whsIcon from "../assets/app-icon-whs.svg"
 import uMoneyTransferIcon from "../assets/app-icon-u-money-transfer.svg"
 import cignalIcon from "../assets/app-icon-cignal.svg"
-import samsungDemoImg from "../assets/samsung-demo.svg"
 import { ProjectIconType } from "./projectIconType"
 
 export const projects = [
@@ -12,8 +11,8 @@ export const projects = [
         id: "career-pause",
         date: "2026 - Present",
         position: "On a career pause",
-        techStack: "React, HTML/CSS, Golang, Figma",
-        description: `I took a career break to explore creative disciplines such as video making, graphic design, and climbing, while also sharpening my technical foundations through continued study in data structures & algorithms and web development. During this time, I built hobby web projects to expand my frontend and backend skills and developed branding work for family and friends. The experience broadened my design perspective and strengthened both my technical and creative approach to building products. I am currently enrolled in an online course from BaselineHQ – a free design bootcamp.`,
+        techStack: "React, HTML/CSS, Figma",
+        description: `I took a career break to explore creative disciplines such as video making, graphic design, and climbing, while also sharpening my technical foundations through continued study in DSA and web development. During this time, I designed and built hobby web projects to expand frontend and backend skills and developed branding work for family and friends. The experience broadened my design perspective and strengthened both my technical and creative approach to building products. I am currently enrolled in an online course from BaselineHQ – a free design bootcamp.`,
         icons: [],
         media: null,
     },
@@ -22,25 +21,22 @@ export const projects = [
         id: "fairprice",
         date: "Jan 2022 – Nov 2024",
         position: "Sr. Software Engineer at Fairprice Group",
-        techStack: "Android (Kotlin), Jetpack Compose, Exoplayer, Go Lang, AI Tools (Cursor, Gemini)",
-        description: `I’ve implemented key features to Fairprice App including
+        techStack: "Android (Kotlin), Jetpack Compose, MVVM, Exoplayer, Go Lang, AI Tools (Cursor, Gemini)",
+        description: `I’ve implemented key features to Fairprice App including -  
+        **Premium Tier**
+* Delivered the feature for the FairPrice Android app (532K clicks within 8 months of launch – 31% of total app traffic) with zero production issues. 
+* Implemented frontend-facing API endpoints for faster feature delivery in collaboration with backend engineers.
 
-Premium Tier
-Delivered Premium Tier (Link+) feature for the FairPrice Android app (532K clicks within 8 months of launch – 31% of total app traffic) with zero production issues. 
+**Rewards**  
+* Developed the FairPrice Rewards module in Jetpack Compose (10+ screens), including Rewards Redemption, Lucky Draw, Challenges, and Voucher Wallet.
 
-Implemented frontend-facing API endpoints for faster feature delivery in collaboration with backend engineers.
+* Established CI/CD and integrated code quality checks with SonarQube for the standalone SDK, then migrated it into the main repository as part of the Android monorepo initiative.
 
-Rewards  
-Developed the FairPrice Rewards module in Jetpack Compose, including Rewards Redemption, Lucky Draw, Challenges, and Voucher Wallet.
+**Architecture / Codebase Maintenance**
 
-Established CI/CD and integrated code quality checks with SonarQube for the standalone SDK, then migrated it into the main repository as part of the Android monorepo initiative.
+* Implemented architectural refactoring between two modules by decoupling shared dependencies, which improved maintainability and reduced ABI build times by ~20 seconds.
 
-Architecture / Codebase Maintenance
-Proactively improved Android codebase maintainability during downtimes through continuous refactoring, reducing code duplication.
-
-Implemented architectural refactoring between two modules by decoupling shared dependencies, which improved maintainability and reduced ABI build times by ~20 seconds.
-
-Implemented technical debt reduction initiatives including cleanup of deprecated gamification features (removing 4K+ lines of dead code), reducing app size, and enforcing feature flag cleanup processes to prevent long-term codebase bloat.`,
+* Implemented technical debt reduction initiatives including cleanup of deprecated gamification features (removing 4K+ lines of dead code), reducing app size, and enforcing feature flag cleanup processes to prevent long-term codebase bloat.`,
         icons: [
             {
                 src: fairpriceIcon,
@@ -57,10 +53,13 @@ Implemented technical debt reduction initiatives including cleanup of deprecated
         date: "Mar 2019 – Dec 2020",
         position: "Application Consultant at Optimum Solutions (UOB Project)",
         techStack: "Android (Kotlin, Java)",
-        description: `UOB INFINITY
+        description: `**UOB INFINITY**
+&nbsp;  
 Resolved high-severity production issues and security incidents as part of production support for the UOB Infinity Singapore application, ensuring service stability and reliability.
-
-UOB TMRW
+&nbsp;  
+&nbsp;  
+**UOB TMRW**
+&nbsp;  
 Developed key engagement features for UOB TMRW as part of the Engagement Team, including real-time Expense Tracking and dynamic Polling/Surveys. Investigated and resolved region-specific bugs for UOB TMRW App, targeting users in Thailand and Indonesia, improving stability and user experience.`,
         icons: [
             {
@@ -142,10 +141,11 @@ Led the support team for the Globe project, managing issue resolution, coordinat
         techStack: "Android (Java)",
         description: `Customised Samsung multimedia applications (Camera, Music, Gallery) on Android OS for AU and NZ markets, implementing device-specific adaptations, patent-compliant design alternatives, and customer-requested software enhancements.`,
         icons: [],
-        media: {
-            type: "image",
-            src: samsungDemoImg,
-            alt: "Samsung app demonstration graphic"
-        },
+        media: null,
+        // media: {
+        //     type: "image",
+        //     src: samsungDemoImg,
+        //     alt: "Samsung app demonstration graphic"
+        // },
     },
 ];

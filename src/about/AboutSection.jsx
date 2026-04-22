@@ -10,7 +10,7 @@ const SKILLS = [
     {
         id: 'web',
         title: 'WEB (FRONTEND)',
-        proficiency: 'medium',
+        proficiency: 'light',
         items: ['React', 'HTML & CSS']
     },
     {
@@ -32,7 +32,7 @@ export default function AboutSection({ aboutRef }) {
                     <h1>Hello visitor,</h1>
                     <div className="summary">
                         <p>I am Maxine, a Software Engineer with 10+ years of experience, specialising in Android development and supported by backend and web development experience. Based in Singapore, I have worked across corporate environments delivering production-grade software used in real-world applications.
-                            My core strength is building and maintaining robust Android applications, with the ability to contribute across backend and web systems when needed. I am currently available for freelance and contract opportunities, where I can help teams ship reliable, scalable products efficiently.</p>
+                            My core strength is building and maintaining robust Android applications, with the ability to contribute across backend and web systems when needed.</p>
                     </div>
                     <h2>Skills</h2>
                     <div className="skills-container">

@@ -2,12 +2,14 @@
     display: flex;
     gap: 16px;
     align-items: flex-start;
-    margin-bottom: 12px;
 }
 
 .icon {
     object-fit: contain;
     transition: var(--transition-icon);
+    border-radius: 12px;
+    /* match your design */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 .icon:hover {

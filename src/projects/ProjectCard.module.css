@@ -1,26 +1,9 @@
-.containerWithMedia {
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: 4fr 3fr;
-    column-gap: 24px;
-    row-gap: 0px;
-}
-
-.container {
-    margin-top: 80px;
-    flex-direction: column;
-    display: flex;
-    width: 70%;
-    min-height: 0;
-}
-
 .techStackText {
     font-style: italic;
 }
 
 .formattedText {
     margin-top: 28px;
-    white-space: pre-line;
 }
 
 .media {
@@ -28,27 +11,48 @@
     flex-direction: column;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 800px;
+    color: #e5e5e5;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+
+.contentContainer {
+    background: #4a455f;
+    border-radius: 20px;
+    padding: 12px 20px 14px 20px;
+    line-height: 1.6;
+}
+
+.title {
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.tags {
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #e0e0e0;
+}
+
 @media (max-width: 1024px) {
     .container {
-        margin-top: 32px;
-        margin-bottom: 12px;
-        flex-direction: column;
-        display: flex;
         width: 100%;
-        min-width: 0;
-    }
-
-    .containerWithMedia {
-        margin-top: 60px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    .media {
-        max-width: 200px;
-        height: auto;
-        align-self: center;
-        border-radius: 20px;
     }
 }
