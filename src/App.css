@@ -37,10 +37,6 @@
   pointer-events: none;
 }
 
-section {
-  scroll-margin-top: 48px;
-}
-
 .page {
   width: 100%;
   min-height: 100vh;
@@ -110,6 +106,11 @@ section {
 }
 
 @media (max-width: 1024px) {
+
+  section {
+    scroll-margin-top: 48px;
+  }
+
   .page-content {
     width: 100%;
     margin: 0;
